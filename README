@@ -1,0 +1,87 @@
+# LLM Fundamentals — Day 1
+
+## Topics Covered
+
+* [x] AI vs Machine Learning vs Deep Learning vs Generative AI
+* [x] What is an LLM?
+* [x] Tokens & Tokenization
+* [x] Context Window
+* [x] LLM Parameters
+* [x] Training vs Inference
+* [x] Pre-training
+* [x] Transformer Architecture — High Level
+* [x] Self-Attention — Basic Concept
+* [x] GPT Architecture — High Level
+* [x] Why LLMs Predict the Next Token
+* [x] Next-Token Prediction
+* [x] Embeddings — Basic Concept
+* [x] Output Logits & Probability — Conceptual Overview
+* [x] Quantization — Basic Concept
+
+## Hands-on
+
+### 1. Simple Tokenization
+
+Created a basic Python tokenization demo using `split()`.
+
+### 2. Local LLM Setup
+
+* Installed Ollama
+* Downloaded Llama 3.2
+* Installed Python `ollama` package
+* Successfully connected Python with local Llama 3.2
+
+### 3. First LLM Inference
+
+Tested:
+
+```text
+Prompt:
+The capital of India is
+
+Response:
+New Delhi.
+```
+
+## Local Model
+
+```text
+Model: Llama 3.2
+Parameters: 3.2B
+Context Length: 131072 tokens
+Embedding Length: 3072
+Quantization: Q4_K_M
+```
+
+## Core LLM Pipeline
+
+```text
+Text
+ ↓
+Tokenization
+ ↓
+Token IDs
+ ↓
+Embeddings
+ ↓
+Transformer Blocks
+ ↓
+Self-Attention
+ ↓
+Output Logits
+ ↓
+Next-Token Selection
+ ↓
+Generated Text
+```
+
+## Key Takeaways
+
+* LLMs process text as tokens.
+* Parameters are learned numerical values inside the model.
+* Pre-training teaches general language patterns through next-token prediction.
+* Training updates model parameters; inference uses the trained parameters.
+* Transformers use attention to model relationships between tokens.
+* LLM generation happens through repeated next-token prediction.
+* Quantization reduces model storage/memory requirements and can improve local inference efficiency.
+* A local LLM can be run without an external API key using Ollama.
