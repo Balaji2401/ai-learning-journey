@@ -85,3 +85,28 @@ Generated Text
 * LLM generation happens through repeated next-token prediction.
 * Quantization reduces model storage/memory requirements and can improve local inference efficiency.
 * A local LLM can be run without an external API key using Ollama.
+
+## Day 2 — Transformers Deep Dive
+
+### Topics Covered
+
+* [x] Neural Network Basics
+* [x] Embeddings
+* [x] Self-Attention
+* [x] Query / Key / Value
+* [x] Causal Attention
+* [x] Multi-Head Attention — Concept
+* [x] Encoder vs Decoder
+* [x] Transformer Architecture
+* [x] Next-Token Prediction
+* [x] Backpropagation & Weight Updates
+
+### Hands-on
+
+Built a tiny Transformer using PyTorch and implemented:
+
+`Embedding → Q/K/V → Self-Attention → Causal Mask → FFN → Logits → Training`
+
+### Key Takeaway
+
+A Transformer processes tokens using **attention** and learns next-token patterns by minimizing **loss through backpropagation**.
